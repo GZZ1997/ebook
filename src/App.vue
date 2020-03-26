@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <span class="text">ABCDEFG</span>
     <router-view/>
   </div>
 </template>
@@ -23,7 +22,7 @@
     html.style.fontSize = fontSize + 'px';
   })
 </script>
-<style lang='scss' scoped>
+<style lang='scss' rel='stylesheet/scss' scoped>
   @import './assets/styles/global.scss';
   .text {
     font-family: 'Days One';
