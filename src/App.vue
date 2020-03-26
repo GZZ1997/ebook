@@ -5,8 +5,16 @@
   </div>
 </template>
 <script>
+  import { mapGetters } from "vuex"
   export default {
-
+    computed: {
+      ...mapGetters(['test'])
+    },
+    mounted() {
+      this.$store.dispatch('setTest', 10).then(() => {
+        console.log(this.test);
+      });
+    }
   }
   document.addEventListener('DOMContentLoaded', () => {
     const html = document.querySelector('html');
