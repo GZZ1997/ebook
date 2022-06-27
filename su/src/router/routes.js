@@ -1,6 +1,6 @@
 import HelloWorld from "@/components/HelloWorld";
 var routes = [{
-  path: "/b",
+  path: "/a",
   name: "HelloWorld",
   component: HelloWorld
 }]
