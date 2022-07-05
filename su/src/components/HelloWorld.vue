@@ -1,15 +1,16 @@
 <template>
   <div class="hello">
-    <h3  style="text-align: center">人工智能计算器</h3>
+    <h5 style="text-align: center; margin: 0">软件奇才郭大明</h5>
+    <h3 style="text-align: center">人工智能云计算Pro</h3>
     <van-divider :style="{ borderColor: '#999', }" />
     <van-cell-group inset>
-      <van-field v-model="value1" placeholder="请输入内容" />
+      <van-field v-model="value1" placeholder="请输入任意内容" />
     </van-cell-group>
     <div class="plus">+</div>
     <van-cell-group inset>
-      <van-field v-model="value2" placeholder="请输入内容" />
+      <van-field v-model="value2" placeholder="请输入任意内容" />
     </van-cell-group>
-    <van-button class="mt-4" style="width: 90%; margin: 0 auto; margin-top: 20px" type="primary" block @click="sum">AI智能计算</van-button>
+    <van-button class="mt-4" style="width: 90%; margin: 0 auto; margin-top: 20px" type="primary" block @click="sum">人工智能云计算</van-button>
     <van-button class="mt-4" style="width: 90%; margin: 0 auto; margin-top: 20px" type="danger" block @click="reset">重置</van-button>
     <van-cell-group class="mt-4" inset>
       <div class="res-box">
@@ -19,8 +20,8 @@
     <!-- 弹出层 -->
     <van-popup v-model:show="show">
       <div class="loading">
-        <span style="margin-bottom: 10px">AI努力计算中...</span>
         <van-loading type="spinner" color="#1989fa"  />
+        <span style="margin-top: 10px">AI努力计算中... ⊙﹏⊙</span>
       </div>
     </van-popup>
   </div>
@@ -83,6 +84,10 @@ export default {
   .res-box {
     height: 100px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
   }
   .loading {
     width: 200px;
